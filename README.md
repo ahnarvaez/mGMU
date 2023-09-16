@@ -8,11 +8,11 @@ This is a companion repository for our paper titled ["A Minimal Gated Multi-Moda
 
 ## Equations that governs our proposed mGMU
 
-\begin{equation}
+$$
 	h_{ij} = \tanh\left ( W_{i} \cdot X_{ij}\right),\;\text{para }\;i = 1,\ldots,n,\;\text{y }\;j = 1,\ldots,C
-\end{equation}
+$$
 
-\begin{equation}
+$$
 	z_{i} = \sigma \left (\left [ X_{1},\dots, X_{n} \right ] \cdot 
   \left [
   \underbrace{        
@@ -20,15 +20,15 @@ This is a companion repository for our paper titled ["A Minimal Gated Multi-Moda
      }_{n \text{ times}}
   \right ]
  \right ),\;\text{para }\;i = 1,...,n
-\end{equation}
+$$
 
-\begin{equation}
+$$
 	O_{T} = \sum _{i=1}^{n}  \sum _{j=1}^{C} \left ( z_{i} \ast h_{ij} \right )
-\end{equation}
+$$
 
-\begin{equation}
+$$
 \Theta = \left \{ W_{11},..., W_{nC}, Wz_{1},...,Wz_{n} \right \}
-\end{equation}
+$$
 
 ## Folder Content
 
