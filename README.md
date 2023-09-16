@@ -6,7 +6,7 @@ This is a companion repository for our paper titled ["A Minimal Gated Multi-Moda
 
 ![mGMU diagram](mgmu.jpg "")
 
-## Equations that governs our proposed mGMU
+## Equations that governs the mGMU
 
 $$
 	h_{ij} = \tanh\left ( W_{i} \cdot X_{ij}\right),\;\text{para }\;i = 1,\ldots,n,\;\text{y }\;j = 1,\ldots,C
@@ -23,12 +23,14 @@ $$
 $$
 
 $$
-	O_{T} = \sum _{i=1}^{n}  \sum _{j=1}^{C}  ( z_{i} \ast h_{ij}  )
+    O_{T} = \sum_{i=1}^{n}  \sum_{j=1}^{C} \left ( z_{i} \ast h_{ij} \right )
 $$
 
 $$
-\Theta = \left \{ W_{11},..., W_{nC}, Wz_{1},...,Wz_{n} \right \}
+\Theta = \lbrace W_{11},..., W_{nC}, Wz_{1},...,Wz_{n} \rbrace
 $$
+
+Where $X_{i} \in \mathbb{R}^{S \times  C}$ is represents the information from modality $i$. $X_{ij} \in \mathbb{R}^{S \times  1}$ is the channel $j$ of the modality $i$. $W_{i} \in \mathbb{R}^{S \times S}$ and $Wz_{i} \in \mathbb{R}^{C \times 1}$ are the weighted matrices.  Further, $n$ is the number of modalities, $S$ the number of samples, $C$ the number of channels, $\theta$ the parameters to be learned, $\left [ .,. \right ]$ the concatenation operator, and $O_{T}$ the output of the gate.
 
 ## Folder Content
 
