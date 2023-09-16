@@ -23,7 +23,7 @@ $$
 $$
 
 $$
-	O_{T} = \sum _{i=1}^{n}  \sum _{j=1}^{C} \left ( z_{i} \ast h_{ij} \right )
+	O_{T} = \sum _{i=1}^{n}  \sum _{j=1}^{C}  ( z_{i} \ast h_{ij}  )
 $$
 
 $$
